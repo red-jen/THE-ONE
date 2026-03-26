@@ -1,0 +1,17 @@
+# Example YOLO detection dataset config (edit paths before training)
+
+# Root folder that contains images/ and labels/
+path: C:/path/to/your/yolo_dataset
+
+# Relative to 'path'
+train: images/train
+val: images/val
+test: images/test
+
+# Class IDs used in label .txt files
+names:
+  0: person
+  1: megaphone
+  2: banner
+  3: microphone
+  4: flag
