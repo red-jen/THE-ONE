@@ -1,0 +1,48 @@
+# Large / generated outputs (regenerate with pipeline scripts)
+/data/
+
+# Large assets
+/images/
+/structued_dataset/
+
+# Trained weights and checkpoints (un-ignore specific small files with !path if needed)
+/models/
+/human_behaviour/checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Logs and local scratch
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Experiment tracking and generated run artifacts
+/human_behaviour/mlflow.db
+/human_behaviour/mlruns/
+/human_behaviour/outputs/
+/human_behaviour/runs/
+/human_behaviour/testvideos/
+/human_behaviour/*.pt
