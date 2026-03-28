@@ -23,6 +23,10 @@ venv/
 .env
 .env.*
 
+# Node / React
+node_modules/
+/human_behaviour/frontend/dist/
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -43,6 +47,13 @@ htmlcov/
 /human_behaviour/mlflow.db
 /human_behaviour/mlruns/
 /human_behaviour/outputs/
+/human_behaviour/src/outputs/
 /human_behaviour/runs/
 /human_behaviour/testvideos/
 /human_behaviour/*.pt
+/human_behaviour/src/**/*.pt
+/human_behaviour/**/*.mp4
+/human_behaviour/**/*.avi
+/human_behaviour/**/*.mov
+/human_behaviour/**/*.mkv
+/human_behaviour/**/*.webm
