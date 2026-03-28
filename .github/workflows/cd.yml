@@ -26,6 +26,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract API image metadata
+        if: ${{ hashFiles('human_behaviour/Dockerfile.api') != '' }}
         id: meta_api
         uses: docker/metadata-action@v5
         with:
@@ -35,6 +36,7 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
 
       - name: Build and push API image
+        if: ${{ hashFiles('human_behaviour/Dockerfile.api') != '' }}
         uses: docker/build-push-action@v6
         with:
           context: ./human_behaviour
@@ -44,6 +46,7 @@ jobs:
           labels: ${{ steps.meta_api.outputs.labels }}
 
       - name: Extract frontend image metadata
+        if: ${{ hashFiles('human_behaviour/frontend/Dockerfile') != '' }}
         id: meta_frontend
         uses: docker/metadata-action@v5
         with:
@@ -53,6 +56,7 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
 
       - name: Build and push frontend image
+        if: ${{ hashFiles('human_behaviour/frontend/Dockerfile') != '' }}
         uses: docker/build-push-action@v6
         with:
           context: ./human_behaviour/frontend
