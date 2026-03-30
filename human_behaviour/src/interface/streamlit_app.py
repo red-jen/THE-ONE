@@ -50,7 +50,7 @@ def main() -> None:
     with st.sidebar:
         st.header("Run Settings")
         run_name = st.text_input("Run name", value="streamlit_run")
-        question = st.text_input("Question (optional)", value="who is likely the leader")
+        question = st.text_input("Question (optional)", value="who is most suspicious")
 
         st.subheader("Models")
         yolo_model = st.text_input("YOLO weights", value="yolov8n.pt")
@@ -65,6 +65,9 @@ def main() -> None:
         st.subheader("Description & Memory")
         descriptor_backend = st.selectbox("Descriptor backend", ["mock", "auto", "llava"], index=0)
         memory_backend = st.selectbox("Memory backend", ["simple", "auto", "chroma"], index=0)
+        rag_generator_backend = st.selectbox("RAG generator", ["template", "ollama"], index=0)
+        rag_ollama_model = st.text_input("Ollama model", value="llama3.1:8b")
+        rag_ollama_url = st.text_input("Ollama URL", value="http://127.0.0.1:11434")
         sample_every = st.number_input("Sample every N frames", min_value=1, max_value=60, value=5)
         max_events = st.number_input("Max events per camera (0 = no limit)", min_value=0, max_value=50000, value=0)
 
@@ -116,6 +119,10 @@ def main() -> None:
                     question=question.strip() or None,
                     top_leaders=3,
                     top_evidence=5,
+                    rag_generator_backend=rag_generator_backend,
+                    rag_ollama_model=rag_ollama_model,
+                    rag_ollama_url=rag_ollama_url,
+                    rag_ollama_timeout_sec=60.0,
                 )
             except Exception as exc:
                 st.error(f"Pipeline failed: {exc}")
@@ -150,7 +157,7 @@ def main() -> None:
                 st.json(rag_payload)
 
         st.subheader("Output shortcuts")
-        st.write(f"- {run_dir / 'leader_scores_summary.json'}")
+        st.write(f"- {run_dir / 'suspicion_scores_summary.json'}")
         st.write(f"- {run_dir / 'memory' / 'index_summary.json'}")
         st.write(f"- {run_dir / 'merged_descriptions.jsonl'}")
 

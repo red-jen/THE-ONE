@@ -1,0 +1,25 @@
+Summary,Issue Type,Description,Priority,Labels
+Epic: Configuration and secrets,Epic,Centralize environment loading (.env) and document all variables for local and Docker.,Medium,config;foundation
+Epic: API and backend,Epic,FastAPI service health auth pipeline runs and DB integration.,High,backend;api
+Epic: Data and persistence,Epic,SQLAlchemy models migrations and CRUD aligned with pipeline outputs.,High,database
+Epic: Testing and quality,Epic,Pytest coverage TestClient patterns CI gates.,Medium,testing;qa
+Epic: Frontend,Epic,React Vite UI for runs analysis and auth flows.,Medium,frontend
+Epic: Observability and ops,Epic,"Prometheus Grafana MLflow Docker compose and deployment docs.",Medium,devops;monitoring
+Verify Jira CSV column mapping,Task,"In Jira: Settings > System > External System Import > CSV. Map Summary Issue Type Description Priority Labels to your project fields.",Highest,admin
+Document HB_* and alias env vars in README,Story,"Describe DATABASE_URL SECRET_KEY vs HB_JWT_SECRET and restart-after-change for DB URL.",Medium,config;docs
+Rotate credentials if .env.example was ever committed with secrets,Task,Regenerate DB passwords and JWT secrets; verify git history.,High,security
+Expand API tests beyond auth smoke,Story,"Add tests for GET /runs GET /runs/{id} and error cases using TestClient and reload pattern.",Medium,testing;api
+Add test for /health DB connectivity failure path,Story,Assert degraded or explicit status when database is unreachable.,Low,testing;api
+Pipeline run integration test with mocked runner,Story,Optional: mock heavy pipeline so POST /pipeline/run returns 202 or success without GPU.,Low,testing
+Scoring tests for edge cases,Story,Empty rows single camera zero suspicion bounds on components.,Low,testing;scoring
+Memory store tests for empty query and top_k,Story,query_simple_store with no matches and top_k=1.,Low,testing;rag
+Frontend E2E or smoke script,Story,"Optional Playwright or documented manual checklist for login and run detail.",Low,frontend;testing
+CI: run pytest tests on every PR,Task,Already in GitHub Actions; confirm paths and requirements.api-docker.txt.,Low,ci
+CI: add coverage report optional,Story,pytest --cov with threshold or artifact upload.,Low,ci;testing
+Database migrations with Alembic,Story,Replace create_all-only with versioned migrations for production.,High,database
+Backup and restore runbook,Task,Document Postgres volume backup for docker-compose deployments.,Medium,devops;docs
+API rate limiting or size limits on upload,Story,Cap upload size and document limits for /pipeline/upload.,Medium,backend;security
+Replace FastAPI on_event with lifespan,Task,Remove deprecation warnings from startup shutdown hooks.,Low,backend;tech-debt
+Unify docs/tests pytest collection,Task,Decide if docs/tests should run under pytest or stay notebook-only.,Low,testing
+Grafana dashboards JSON export,Story,Save starter dashboards in repo for compose stack.,Low,devops;monitoring
+Ollama unreachable graceful errors,Story,User-facing message when analyze or ask fails due to LLM down.,Medium,backend;ux

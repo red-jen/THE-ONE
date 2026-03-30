@@ -137,11 +137,12 @@ def score_person(item: PersonAggregate, weights: ScoringWeights) -> dict:
         "presence_signal": weights.presence_signal * presence_ratio,
     }
 
-    leader_score = sum(components.values())
+    suspicion_score = sum(components.values())
 
     return {
         "person_id": item.person_id,
-        "leader_score": round(float(leader_score), 3),
+        "suspicion_score": round(float(suspicion_score), 3),
+        "leader_score": round(float(suspicion_score), 3),
         "components": {k: round(float(v), 3) for k, v in components.items()},
         "stats": {
             "observations": item.observations,
@@ -193,7 +194,7 @@ def run_leader_scoring(
     weights = ScoringWeights()
 
     scored = [score_person(item, weights=weights) for item in agg.values()]
-    scored.sort(key=lambda x: x["leader_score"], reverse=True)
+    scored.sort(key=lambda x: x["suspicion_score"], reverse=True)
 
     out_jsonl_path = Path(output_jsonl).resolve()
     out_summary_path = Path(output_summary).resolve()
@@ -234,24 +235,24 @@ def run_leader_scoring(
         mlflow.log_metric("people_scored", len(scored))
         mlflow.log_metric("rows_input", len(rows))
         if scored:
-            mlflow.log_metric("top_leader_score", float(scored[0]["leader_score"]))
+            mlflow.log_metric("top_suspicion_score", float(scored[0]["suspicion_score"]))
 
         mlflow.log_artifact(str(out_jsonl_path))
         mlflow.log_artifact(str(out_summary_path))
         mlflow.end_run()
 
     print("=" * 60)
-    print("Leader scoring completed")
+    print("Suspicion scoring completed")
     print(f"Input: {Path(input_jsonl).resolve()}")
     print(f"Scores JSONL: {out_jsonl_path}")
     print(f"Summary JSON: {out_summary_path}")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Score tracked persons as potential protest leaders")
+    parser = argparse.ArgumentParser(description="Score tracked persons by protest suspicion signals")
     parser.add_argument("--input-jsonl", type=str, required=True, help="Description events JSONL path")
-    parser.add_argument("--output-jsonl", type=str, default="outputs/scores/leader_scores.jsonl")
-    parser.add_argument("--output-summary", type=str, default="outputs/scores/leader_scores_summary.json")
+    parser.add_argument("--output-jsonl", type=str, default="outputs/scores/suspicion_scores.jsonl")
+    parser.add_argument("--output-summary", type=str, default="outputs/scores/suspicion_scores_summary.json")
     parser.add_argument("--top-k", type=int, default=5, help="Number of top candidates in summary")
     parser.add_argument("--mlflow", action="store_true", help="Enable MLflow logging")
     parser.add_argument("--mlflow-tracking-uri", type=str, default=None, help="Optional MLflow tracking URI")

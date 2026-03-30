@@ -28,7 +28,9 @@ faiss-cpu>=1.7.4  # or faiss-gpu for GPU support
 # RAG Components
 # transformers>=4.30.0
 # sentence-transformers>=2.2.0
-# langchain>=0.1.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-ollama>=0.2.0
 # openai>=1.0.0  # If using OpenAI
 
 # MLOps
@@ -41,7 +43,12 @@ pydantic>=2.0.0
 uvicorn>=0.24.0
 python-multipart>=0.0.9
 PyJWT>=2.8.0
-streamlit>=1.33.0
+prometheus-client>=0.22.0
+
+# Database (PostgreSQL)
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+python-dotenv>=1.0.0
 
 # Development
 tqdm>=4.65.0

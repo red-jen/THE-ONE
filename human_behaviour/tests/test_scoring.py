@@ -38,7 +38,7 @@ def test_aggregate_and_score_person():
 
     scored = score_person(grouped[1], ScoringWeights())
     assert scored["person_id"] == 1
-    assert scored["leader_score"] > 0
+    assert scored["suspicion_score"] > 0
     assert scored["components"]["front_presence"] > 0
     assert scored["components"]["object_signal"] > 0
     assert scored["stats"]["camera_count"] == 2

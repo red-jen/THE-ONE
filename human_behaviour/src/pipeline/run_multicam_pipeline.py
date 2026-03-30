@@ -17,6 +17,7 @@ from description.llava_descriptor import run_description_pipeline
 from interface.chatbot import answer_query
 from memory.chroma_store import run_index
 from scoring.leader_scorer import run_leader_scoring
+from scoring.rag_scorer import run_rag_scoring
 from tracking.reid_tracker import run_tracking
 
 
@@ -92,6 +93,10 @@ def run_multicam_pipeline(
     question: str | None,
     top_leaders: int,
     top_evidence: int,
+    rag_generator_backend: str,
+    rag_ollama_model: str,
+    rag_ollama_url: str,
+    rag_ollama_timeout_sec: float,
 ) -> None:
     video_paths = _collect_videos(videos=videos, videos_dir=videos_dir)
     if not video_paths:
@@ -159,12 +164,13 @@ def run_multicam_pipeline(
     merged_desc = root / "merged_descriptions.jsonl"
     merged_count = _merge_jsonl(description_files, merged_desc)
 
-    scores_jsonl = root / "leader_scores.jsonl"
-    scores_summary = root / "leader_scores_summary.json"
+    # Stage 4a: heuristic pre-scoring (signal aggregation baseline)
+    heuristic_jsonl = root / "heuristic_scores.jsonl"
+    heuristic_summary = root / "heuristic_scores_summary.json"
     run_leader_scoring(
         input_jsonl=str(merged_desc),
-        output_jsonl=str(scores_jsonl),
-        output_summary=str(scores_summary),
+        output_jsonl=str(heuristic_jsonl),
+        output_summary=str(heuristic_summary),
         top_k=score_top_k,
         use_mlflow=False,
         mlflow_tracking_uri=None,
@@ -172,25 +178,44 @@ def run_multicam_pipeline(
         mlflow_run_name=None,
     )
 
+    # Stage 4b: RAG scoring — LLM reads evidence and decides leadership
+    leader_jsonl = root / "leader_scores.jsonl"
+    leader_summary = root / "leader_scores_summary.json"
+    rag_scoring_result = run_rag_scoring(
+        input_jsonl=str(merged_desc),
+        output_jsonl=str(leader_jsonl),
+        output_summary=str(leader_summary),
+        top_k=score_top_k,
+        model=rag_ollama_model,
+        ollama_url=rag_ollama_url,
+        timeout_sec=rag_ollama_timeout_sec,
+    )
+
+    # Stage 5: memory indexation
     memory_dir = root / "memory"
     run_index(input_jsonl=str(merged_desc), store_dir=str(memory_dir), backend=memory_backend)
 
+    # Stage 6: RAG Q&A (uses LLM-scored candidates as context)
     rag_answer_path = None
     if question:
         simple_store = memory_dir / "simple_store.json"
         if simple_store.exists():
             answer = answer_query(
                 question=question,
-                scores_jsonl=str(scores_jsonl),
+                scores_jsonl=str(leader_jsonl),
                 simple_store_json=str(simple_store),
                 top_leaders=top_leaders,
                 top_evidence=top_evidence,
+                generator_backend=rag_generator_backend,
+                ollama_model=rag_ollama_model,
+                ollama_url=rag_ollama_url,
+                ollama_timeout_sec=rag_ollama_timeout_sec,
             )
             rag_answer_path = root / "rag_answer.json"
             with rag_answer_path.open("w", encoding="utf-8") as f:
                 json.dump(answer, f, ensure_ascii=False, indent=2)
         else:
-            print("[WARN] Question provided but simple store not available for chatbot answering.")
+            print("[WARN] Question provided but simple store not available.")
 
     manifest = {
         "run_name": run_name,
@@ -199,8 +224,9 @@ def run_multicam_pipeline(
         "camera_runs": camera_runs,
         "merged_descriptions": str(merged_desc),
         "merged_rows": merged_count,
-        "scores_jsonl": str(scores_jsonl),
-        "scores_summary": str(scores_summary),
+        "heuristic_scores_jsonl": str(heuristic_jsonl),
+        "leader_scores_jsonl": str(leader_jsonl),
+        "leader_scoring_backend": rag_scoring_result.get("backend_used", "unknown"),
         "memory_dir": str(memory_dir),
         "rag_answer_json": str(rag_answer_path) if rag_answer_path else None,
     }
@@ -244,6 +270,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--question", type=str, default=None)
     parser.add_argument("--top-leaders", type=int, default=3)
     parser.add_argument("--top-evidence", type=int, default=5)
+    parser.add_argument("--rag-generator-backend", choices=["template", "ollama"], default="template")
+    parser.add_argument("--rag-ollama-model", type=str, default="llama3.1:8b")
+    parser.add_argument("--rag-ollama-url", type=str, default="http://127.0.0.1:11434")
+    parser.add_argument("--rag-ollama-timeout-sec", type=float, default=60.0)
 
     return parser.parse_args()
 
@@ -272,6 +302,10 @@ def main() -> None:
         question=args.question,
         top_leaders=args.top_leaders,
         top_evidence=args.top_evidence,
+        rag_generator_backend=args.rag_generator_backend,
+        rag_ollama_model=args.rag_ollama_model,
+        rag_ollama_url=args.rag_ollama_url,
+        rag_ollama_timeout_sec=args.rag_ollama_timeout_sec,
     )
 
 

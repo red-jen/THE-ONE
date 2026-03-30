@@ -37,14 +37,11 @@ def test_auth_token_and_protected_route():
     assert token_resp.status_code == 200
     token = token_resp.json()["access_token"]
 
-    no_auth_resp = client.post(
-        "/run-multicam-path",
-        json={"run_name": "x", "videos": [], "videos_dir": None},
-    )
+    no_auth_resp = client.post("/pipeline/run", json={"run_name": "x", "videos": [], "videos_dir": None})
     assert no_auth_resp.status_code == 401
 
     auth_resp = client.post(
-        "/run-multicam-path",
+        "/pipeline/run",
         headers={"Authorization": f"Bearer {token}"},
         json={"run_name": "x", "videos": [], "videos_dir": None},
     )
