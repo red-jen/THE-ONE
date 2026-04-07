@@ -1,0 +1,15 @@
+{
+  "source": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\uploads\\rr_20260327_114251\\4766165-uhd_4096_2160_24fps.mp4",
+  "mode": "video",
+  "video_size": [
+    4096,
+    2160
+  ],
+  "fps": 24.0,
+  "frames_processed": 845,
+  "yolo_person_detections_total": 8525,
+  "track_events_total": 8525,
+  "crops_saved_total": 8525,
+  "crops_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\rr\\cam_1_4766165-uhd_4096_2160_24fps\\tracking\\crops",
+  "note": "Per frame: YOLO class 0 (person), then OSNet embedding per valid box; no frame skipping in tracker."
+}

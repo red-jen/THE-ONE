@@ -1,0 +1,23 @@
+{
+  "run_name": "smoke_orchestrator",
+  "videos_count": 1,
+  "videos": [
+    "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\reid_tracking_smoke\\synthetic_input.mp4"
+  ],
+  "camera_runs": [
+    {
+      "camera_id": "cam_1_synthetic_input",
+      "video": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\reid_tracking_smoke\\synthetic_input.mp4",
+      "tracking_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\cam_1_synthetic_input\\tracking",
+      "tracks_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\cam_1_synthetic_input\\tracking\\tracks.jsonl",
+      "description_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\cam_1_synthetic_input\\description\\descriptions.jsonl",
+      "description_summary": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\cam_1_synthetic_input\\description\\summary.json"
+    }
+  ],
+  "merged_descriptions": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\merged_descriptions.jsonl",
+  "merged_rows": 12,
+  "scores_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\leader_scores.jsonl",
+  "scores_summary": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\leader_scores_summary.json",
+  "memory_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\memory",
+  "rag_answer_json": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\smoke_orchestrator\\rag_answer.json"
+}

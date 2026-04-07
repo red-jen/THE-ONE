@@ -1,0 +1,69 @@
+{
+  "input_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\api_smoke\\merged_descriptions.jsonl",
+  "people_scored": 2,
+  "top_k": 5,
+  "top_candidates": [
+    {
+      "person_id": 1,
+      "leader_score": 5.333,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.833,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 4.5
+      },
+      "stats": {
+        "observations": 6,
+        "avg_detection_confidence": 0.038627,
+        "duration_sec": 2.5,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 6,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 2,
+      "leader_score": 5.333,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.833,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 4.5
+      },
+      "stats": {
+        "observations": 6,
+        "avg_detection_confidence": 0.015037,
+        "duration_sec": 2.5,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 6,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    }
+  ],
+  "weights": {
+    "front_presence": 25.0,
+    "object_signal": 25.0,
+    "gesture_signal": 15.0,
+    "duration_signal": 10.0,
+    "multi_camera_signal": 10.0,
+    "presence_signal": 15.0
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "question": "Who is the most likely protest leader and why?",
+  "answer": "Question: Who is the most likely protest leader and why?\n\nBased on the analysis, the most likely leaders are:\n  #1 Person 2 — score 25.0/100\n      Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation.\n  #2 Person 3 — score 25.0/100\n      Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation.\n  #3 Person 5 — score 25.0/100\n      Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation.\n  #4 Person 7 — score 25.0/100\n      Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation.\n  #5 Person 9 — score 25.0/100\n      Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation.\n\nSupporting evidence:\n  [1] Person 1 (cam cam_1_4766165-uhd_4096_2160_24fps): A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 pos\n  [2] Person 2 (cam cam_1_4766165-uhd_4096_2160_24fps): A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 pos\n  [3] Person 3 (cam cam_1_4766165-uhd_4096_2160_24fps): A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 pos\n  [4] Person 4 (cam cam_1_4766165-uhd_4096_2160_24fps): A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 pos\n  [5] Person 5 (cam cam_1_4766165-uhd_4096_2160_24fps): A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 pos",
+  "top_candidates": [
+    {
+      "person_id": 2,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 3,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 5,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 7,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 9,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    }
+  ],
+  "evidence_used": [
+    {
+      "relevance": 0.106752,
+      "doc_id": "desc_0",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=1 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 1,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          1303,
+          990,
+          1862,
+          2153
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_1",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=2 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 2,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          2407,
+          929,
+          3088,
+          2149
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_2",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=3 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 3,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          779,
+          1014,
+          1327,
+          2154
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_3",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=4 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 4,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          3029,
+          936,
+          3582,
+          2152
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_4",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=5 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 5,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          1849,
+          1097,
+          2451,
+          2155
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_5",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=6 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 6,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          0,
+          1155,
+          289,
+          2150
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_6",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=7 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 7,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          210,
+          1142,
+          574,
+          2155
+        ]
+      }
+    },
+    {
+      "relevance": 0.105409,
+      "doc_id": "desc_7",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=8 camera_id=cam_1_4766165-uhd_4096_2160_24fps frame_idx=0",
+      "metadata": {
+        "person_id": 8,
+        "camera_id": "cam_1_4766165-uhd_4096_2160_24fps",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          3543,
+          636,
+          4043,
+          2143
+        ]
+      }
+    }
+  ],
+  "generator_backend": "template",
+  "model": null
+}

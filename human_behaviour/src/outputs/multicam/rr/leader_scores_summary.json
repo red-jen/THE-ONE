@@ -1,0 +1,255 @@
+{
+  "input_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\rr\\merged_descriptions.jsonl",
+  "people_scored": 5,
+  "backend_used": "heuristic_fallback",
+  "model": "llama3.1:8b",
+  "top_candidates": [
+    {
+      "person_id": 2,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 3,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 5,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 7,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 9,
+      "leader_score": 25.0,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    }
+  ],
+  "evidence_summary": {
+    "1": {
+      "observations": 121,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 25.0
+    },
+    "2": {
+      "observations": 138,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 35.0
+    },
+    "3": {
+      "observations": 169,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 35.0
+    },
+    "4": {
+      "observations": 61,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 12.7
+    },
+    "5": {
+      "observations": 128,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 31.7
+    },
+    "6": {
+      "observations": 99,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 20.4
+    },
+    "7": {
+      "observations": 150,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 34.4
+    },
+    "8": {
+      "observations": 30,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 7.1
+    },
+    "9": {
+      "observations": 130,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 35.0
+    },
+    "10": {
+      "observations": 28,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 12.3
+    },
+    "11": {
+      "observations": 105,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 34.2
+    },
+    "12": {
+      "observations": 34,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 7.1
+    },
+    "13": {
+      "observations": 116,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 34.6
+    },
+    "14": {
+      "observations": 129,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 34.2
+    },
+    "15": {
+      "observations": 66,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 16.9
+    },
+    "16": {
+      "observations": 98,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 24.8
+    },
+    "17": {
+      "observations": 15,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 5.6
+    },
+    "18": {
+      "observations": 84,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 28.3
+    },
+    "19": {
+      "observations": 8,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 4.2
+    },
+    "20": {
+      "observations": 5,
+      "cameras": [
+        "cam_1_4766165-uhd_4096_2160_24fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 0.8
+    }
+  }
+}

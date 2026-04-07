@@ -1,0 +1,23 @@
+{
+  "run_name": "real_protest_smoke",
+  "videos_count": 1,
+  "videos": [
+    "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\testvideos\\5286261-hd_1920_1080_30fps.mp4"
+  ],
+  "camera_runs": [
+    {
+      "camera_id": "cam_1_5286261-hd_1920_1080_30fps",
+      "video": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\testvideos\\5286261-hd_1920_1080_30fps.mp4",
+      "tracking_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\cam_1_5286261-hd_1920_1080_30fps\\tracking",
+      "tracks_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\cam_1_5286261-hd_1920_1080_30fps\\tracking\\tracks.jsonl",
+      "description_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\cam_1_5286261-hd_1920_1080_30fps\\description\\descriptions.jsonl",
+      "description_summary": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\cam_1_5286261-hd_1920_1080_30fps\\description\\summary.json"
+    }
+  ],
+  "merged_descriptions": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\merged_descriptions.jsonl",
+  "merged_rows": 44,
+  "scores_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\leader_scores.jsonl",
+  "scores_summary": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\leader_scores_summary.json",
+  "memory_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\memory",
+  "rag_answer_json": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\real_protest_smoke\\rag_answer.json"
+}

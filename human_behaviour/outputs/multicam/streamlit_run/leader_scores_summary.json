@@ -1,0 +1,150 @@
+{
+  "input_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\streamlit_run\\merged_descriptions.jsonl",
+  "people_scored": 20,
+  "top_k": 5,
+  "top_candidates": [
+    {
+      "person_id": 2,
+      "leader_score": 30.0,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 10.0,
+        "multi_camera_signal": 5.0,
+        "presence_signal": 15.0
+      },
+      "stats": {
+        "observations": 157,
+        "avg_detection_confidence": 0.652206,
+        "duration_sec": 35.0,
+        "camera_count": 2,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 157,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 3,
+      "leader_score": 30.0,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 10.0,
+        "multi_camera_signal": 5.0,
+        "presence_signal": 15.0
+      },
+      "stats": {
+        "observations": 183,
+        "avg_detection_confidence": 0.811139,
+        "duration_sec": 35.0,
+        "camera_count": 2,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 183,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 5,
+      "leader_score": 30.0,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 10.0,
+        "multi_camera_signal": 5.0,
+        "presence_signal": 15.0
+      },
+      "stats": {
+        "observations": 147,
+        "avg_detection_confidence": 0.678828,
+        "duration_sec": 31.667,
+        "camera_count": 2,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 147,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 7,
+      "leader_score": 30.0,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 10.0,
+        "multi_camera_signal": 5.0,
+        "presence_signal": 15.0
+      },
+      "stats": {
+        "observations": 169,
+        "avg_detection_confidence": 0.701224,
+        "duration_sec": 34.375,
+        "camera_count": 2,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 169,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 9,
+      "leader_score": 30.0,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 10.0,
+        "multi_camera_signal": 5.0,
+        "presence_signal": 15.0
+      },
+      "stats": {
+        "observations": 146,
+        "avg_detection_confidence": 0.565142,
+        "duration_sec": 35.0,
+        "camera_count": 2,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 146,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    }
+  ],
+  "weights": {
+    "front_presence": 25.0,
+    "object_signal": 25.0,
+    "gesture_signal": 15.0,
+    "duration_signal": 10.0,
+    "multi_camera_signal": 10.0,
+    "presence_signal": 15.0
+  }
+}

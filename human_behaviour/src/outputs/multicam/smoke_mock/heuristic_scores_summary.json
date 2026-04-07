@@ -1,0 +1,155 @@
+{
+  "input_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\smoke_mock\\merged_descriptions.jsonl",
+  "people_scored": 13,
+  "top_k": 5,
+  "top_candidates": [
+    {
+      "person_id": 5,
+      "suspicion_score": 6.89,
+      "leader_score": 6.89,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.89,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 6.0
+      },
+      "stats": {
+        "observations": 8,
+        "avg_detection_confidence": 0.395949,
+        "duration_sec": 2.669,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 8,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 6,
+      "suspicion_score": 6.89,
+      "leader_score": 6.89,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.89,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 6.0
+      },
+      "stats": {
+        "observations": 8,
+        "avg_detection_confidence": 0.451374,
+        "duration_sec": 2.669,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 8,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 1,
+      "suspicion_score": 6.14,
+      "leader_score": 6.14,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.89,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 5.25
+      },
+      "stats": {
+        "observations": 7,
+        "avg_detection_confidence": 0.387883,
+        "duration_sec": 2.669,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 7,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 8,
+      "suspicion_score": 6.14,
+      "leader_score": 6.14,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.89,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 5.25
+      },
+      "stats": {
+        "observations": 7,
+        "avg_detection_confidence": 0.337031,
+        "duration_sec": 2.669,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 7,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 3,
+      "suspicion_score": 5.39,
+      "leader_score": 5.39,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.89,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 4.5
+      },
+      "stats": {
+        "observations": 6,
+        "avg_detection_confidence": 0.337494,
+        "duration_sec": 2.669,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 6,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    }
+  ],
+  "weights": {
+    "front_presence": 25.0,
+    "object_signal": 25.0,
+    "gesture_signal": 15.0,
+    "duration_signal": 10.0,
+    "multi_camera_signal": 10.0,
+    "presence_signal": 15.0
+  }
+}

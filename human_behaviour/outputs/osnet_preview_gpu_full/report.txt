@@ -1,0 +1,5 @@
+Sample 1: query pid=618, cam=5, top-5 hits=2/5, panel=sample_01.jpg
+Sample 2: query pid=270, cam=6, top-5 hits=5/5, panel=sample_02.jpg
+Sample 3: query pid=1378, cam=1, top-5 hits=1/5, panel=sample_03.jpg
+Sample 4: query pid=1121, cam=2, top-5 hits=1/5, panel=sample_04.jpg
+Sample 5: query pid=797, cam=6, top-5 hits=4/5, panel=sample_05.jpg

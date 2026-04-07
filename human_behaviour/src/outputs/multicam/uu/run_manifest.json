@@ -1,0 +1,24 @@
+{
+  "run_name": "uu",
+  "videos_count": 1,
+  "videos": [
+    "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\uploads\\uu_20260327_112143\\5286261-hd_1920_1080_30fps.mp4"
+  ],
+  "camera_runs": [
+    {
+      "camera_id": "cam_1_5286261-hd_1920_1080_30fps",
+      "video": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\uploads\\uu_20260327_112143\\5286261-hd_1920_1080_30fps.mp4",
+      "tracking_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\cam_1_5286261-hd_1920_1080_30fps\\tracking",
+      "tracks_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\cam_1_5286261-hd_1920_1080_30fps\\tracking\\tracks.jsonl",
+      "description_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\cam_1_5286261-hd_1920_1080_30fps\\description\\descriptions.jsonl",
+      "description_summary": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\cam_1_5286261-hd_1920_1080_30fps\\description\\summary.json"
+    }
+  ],
+  "merged_descriptions": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\merged_descriptions.jsonl",
+  "merged_rows": 172,
+  "heuristic_scores_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\heuristic_scores.jsonl",
+  "leader_scores_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\leader_scores.jsonl",
+  "leader_scoring_backend": "heuristic_fallback",
+  "memory_dir": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\memory",
+  "rag_answer_json": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\uu\\rag_answer.json"
+}

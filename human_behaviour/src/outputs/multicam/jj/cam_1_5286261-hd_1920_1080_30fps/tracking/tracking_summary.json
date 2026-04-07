@@ -1,0 +1,13 @@
+{
+  "source": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\uploads\\jj_20260327_070454\\5286261-hd_1920_1080_30fps.mp4",
+  "mode": "video",
+  "video_size": [
+    1920,
+    1080
+  ],
+  "fps": 29.97002997002997,
+  "frames_processed": 120,
+  "yolo_person_detections_total": 852,
+  "track_events_total": 852,
+  "note": "Per frame: YOLO class 0 (person), then OSNet embedding per valid box; no frame skipping in tracker."
+}

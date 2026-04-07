@@ -1,0 +1,113 @@
+{
+  "question": "who is likely the leader",
+  "top_candidates": [
+    {
+      "person_id": 1,
+      "leader_score": 5.333,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.833,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 4.5
+      },
+      "stats": {
+        "observations": 6,
+        "avg_detection_confidence": 0.038627,
+        "duration_sec": 2.5,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 6,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    },
+    {
+      "person_id": 2,
+      "leader_score": 5.333,
+      "components": {
+        "front_presence": 0.0,
+        "object_signal": 0.0,
+        "gesture_signal": 0.0,
+        "duration_signal": 0.833,
+        "multi_camera_signal": 0.0,
+        "presence_signal": 4.5
+      },
+      "stats": {
+        "observations": 6,
+        "avg_detection_confidence": 0.015037,
+        "duration_sec": 2.5,
+        "camera_count": 1,
+        "front_count": 0,
+        "center_count": 0,
+        "back_count": 0,
+        "unknown_pos_count": 6,
+        "megaphone_count": 0,
+        "banner_count": 0,
+        "flag_count": 0,
+        "microphone_count": 0,
+        "gesture_total": 0
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "score": 0.074536,
+      "doc_id": "desc_0",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=1 camera_id=cam_1_synthetic_input frame_idx=0",
+      "metadata": {
+        "person_id": 1,
+        "camera_id": "cam_1_synthetic_input",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          4,
+          19,
+          54,
+          125
+        ]
+      }
+    },
+    {
+      "score": 0.073521,
+      "doc_id": "desc_1",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=2 camera_id=cam_1_synthetic_input frame_idx=0",
+      "metadata": {
+        "person_id": 2,
+        "camera_id": "cam_1_synthetic_input",
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "bbox": [
+          36,
+          21,
+          58,
+          123
+        ]
+      }
+    },
+    {
+      "score": 0.073521,
+      "doc_id": "desc_2",
+      "text": "A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=1 camera_id=cam_1_synthetic_input frame_idx=5",
+      "metadata": {
+        "person_id": 1,
+        "camera_id": "cam_1_synthetic_input",
+        "frame_idx": 5,
+        "timestamp_sec": 0.5,
+        "bbox": [
+          4,
+          19,
+          54,
+          125
+        ]
+      }
+    }
+  ],
+  "answer": "Question: who is likely the leader\nTop leader candidates:\n1. Person 1 with score 5.333 (front=0.0, objects=0.0, gesture=0.0).\n2. Person 2 with score 5.333 (front=0.0, objects=0.0, gesture=0.0).\nRelevant evidence snippets:\n- [1] score=0.074536 person=1 camera=cam_1_synthetic_input frame=0\n  A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=1 camera_id=cam_1_synthetic_input frame_idx=0\n- [2] score=0.073521 person=2 camera=cam_1_synthetic_input frame=0\n  A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=2 camera_id=cam_1_synthetic_input frame_idx=0\n- [3] score=0.073521 person=1 camera=cam_1_synthetic_input frame=5\n  A person appears upright in a crowded scene. Upper-body crop quality is moderate. No clear protest object is confidently visible. megaphone=False banner=False flag=False microphone=False gesture=0 position=unknown person_id=1 camera_id=cam_1_synthetic_input frame_idx=5"
+}

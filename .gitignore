@@ -46,8 +46,7 @@ htmlcov/
 # Experiment tracking and generated run artifacts
 /human_behaviour/mlflow.db
 /human_behaviour/mlruns/
-/human_behaviour/outputs/
-/human_behaviour/src/outputs/
+
 /human_behaviour/runs/
 /human_behaviour/testvideos/
 /human_behaviour/*.pt

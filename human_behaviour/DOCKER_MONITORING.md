@@ -4,7 +4,7 @@
 
 - `frontend` -> React app on `http://localhost:3000`
 - `api` -> FastAPI backend on `http://localhost:8010`
-- `postgres` -> PostgreSQL on `localhost:5432`
+- `postgres` -> PostgreSQL on `localhost:5433` (container still listens on 5432 inside the network; API uses `postgres:5432`)
 - `prometheus` -> Metrics server on `http://localhost:9090`
 - `grafana` -> Dashboards on `http://localhost:3001`
 - `mlflow` -> Tracking server on `http://localhost:5000`

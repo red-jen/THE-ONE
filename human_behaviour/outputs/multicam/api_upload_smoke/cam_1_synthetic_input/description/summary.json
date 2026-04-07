@@ -1,0 +1,17 @@
+{
+  "source": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\uploads\\api_upload_smoke_20260324_151457\\synthetic_input.mp4",
+  "tracks_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\outputs\\multicam\\api_upload_smoke\\cam_1_synthetic_input\\tracking\\tracks.jsonl",
+  "backend": "mock",
+  "model_id": "mock",
+  "camera_id": "cam_1_synthetic_input",
+  "events_loaded": 12,
+  "descriptions_written": 12,
+  "unique_person_ids": [
+    1,
+    2
+  ],
+  "descriptions_per_person": {
+    "1": 6,
+    "2": 6
+  }
+}

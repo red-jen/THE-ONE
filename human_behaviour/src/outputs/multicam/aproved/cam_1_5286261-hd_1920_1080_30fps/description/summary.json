@@ -1,0 +1,39 @@
+{
+  "source": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\uploads\\aproved_20260327_065556\\5286261-hd_1920_1080_30fps.mp4",
+  "tracks_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\aproved\\cam_1_5286261-hd_1920_1080_30fps\\tracking\\tracks.jsonl",
+  "backend": "auto",
+  "model_id": "llava-hf/llava-1.5-7b-hf",
+  "camera_id": "cam_1_5286261-hd_1920_1080_30fps",
+  "events_loaded": 172,
+  "descriptions_written": 172,
+  "unique_person_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "descriptions_per_person": {
+    "1": 13,
+    "2": 19,
+    "3": 14,
+    "4": 15,
+    "5": 19,
+    "6": 21,
+    "7": 19,
+    "8": 16,
+    "9": 16,
+    "10": 8,
+    "11": 6,
+    "12": 4,
+    "13": 2
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "input_jsonl": "C:\\Users\\redaj\\Desktop\\ME\\THE-ONE\\human_behaviour\\src\\outputs\\multicam\\smoke_mock\\merged_descriptions.jsonl",
+  "people_scored": 5,
+  "backend_used": "heuristic_fallback",
+  "model": "llama3.1:8b",
+  "top_candidates": [
+    {
+      "person_id": 5,
+      "leader_score": 6.9,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 6,
+      "leader_score": 6.9,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 1,
+      "leader_score": 6.1,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 8,
+      "leader_score": 6.1,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    },
+    {
+      "person_id": 3,
+      "leader_score": 5.4,
+      "reasoning": "Heuristic fallback — LLM unavailable. Score based on weighted signal aggregation."
+    }
+  ],
+  "evidence_summary": {
+    "1": {
+      "observations": 7,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "2": {
+      "observations": 4,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "3": {
+      "observations": 6,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "4": {
+      "observations": 6,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "5": {
+      "observations": 8,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "6": {
+      "observations": 8,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "7": {
+      "observations": 6,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "8": {
+      "observations": 7,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 2.7
+    },
+    "9": {
+      "observations": 2,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 1.7
+    },
+    "10": {
+      "observations": 3,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 0.7
+    },
+    "11": {
+      "observations": 1,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 0.0
+    },
+    "12": {
+      "observations": 1,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 0.0
+    },
+    "13": {
+      "observations": 1,
+      "cameras": [
+        "cam_1_5286261-hd_1920_1080_30fps"
+      ],
+      "front_count": 0,
+      "megaphone_count": 0,
+      "banner_count": 0,
+      "gesture_total": 0,
+      "duration_sec": 0.0
+    }
+  }
+}
