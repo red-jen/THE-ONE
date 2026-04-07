@@ -22,6 +22,9 @@ build/
 venv/
 .env
 .env.*
+!/.env.example
+!/human_behaviour/.env.example
+!/human_behaviour/frontend/.env.example
 
 # Node / React
 node_modules/
@@ -46,6 +49,8 @@ htmlcov/
 # Experiment tracking and generated run artifacts
 /human_behaviour/mlflow.db
 /human_behaviour/mlruns/
+/human_behaviour/outputs/
+/human_behaviour/src/outputs/
 
 /human_behaviour/runs/
 /human_behaviour/testvideos/

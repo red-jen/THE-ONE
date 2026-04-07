@@ -53,24 +53,3 @@ def test_post_echo_round_trip():
 
     assert response.status_code == 200
     assert response.json() == {"you_sent": {"hello": "world"}}
-
-
-
-
-
-
-
-
-
-
-
-app = FastAPI()
-
-app.get("users")
-def get_users(users: List[User]):
-    return users 
-
-
-def test_get_users():
-
-    client 
